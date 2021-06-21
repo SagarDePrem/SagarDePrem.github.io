@@ -11,7 +11,6 @@ import { ContactComponent } from './components/contact/contact.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { HttpClientModule } from '@angular/common/http';
 import { VerticalTimelineModule } from 'angular-vertical-timeline';
-import {MatToolbarModule} from '@angular/material/toolbar'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +27,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     IvyCarouselModule,
     HttpClientModule,
     VerticalTimelineModule,
-    MatToolbarModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

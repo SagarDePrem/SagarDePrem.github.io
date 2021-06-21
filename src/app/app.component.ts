@@ -7,7 +7,7 @@ import avatar from 'assets/avatar.json'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'web-app';
+  title = 'PS';
   showFiller = false;
   avatar: any = avatar;
 }

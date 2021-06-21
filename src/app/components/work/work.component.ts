@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import workItems from '/assets/work.json'
+import avatar from 'assets/avatar.json'
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
@@ -12,5 +13,6 @@ export class WorkComponent implements OnInit {
   ngOnInit(): void {
     this.workItems = workItems
   }
+  avatar: any = avatar;
 
 }

@@ -1,10 +1,11 @@
-.work-item-container{
+.work-item-container {
     align-items: center;
     background-position-x: center;
     background-position-y: center;
     object-fit: cover;
 }
-.work-item-button{
+
+.work-item-button {
     background-color: black;
     color: white;
     width: 25%;
@@ -12,4 +13,42 @@
     font-weight: bold;
     font-variant-caps: all-petite-caps;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+    width: 100%;
+    height: 100%;
+}
+
+.app-content {
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-sidenav {
+    padding: 20px 0 0 0;
+    width: 15%;
+    background-color: var(--base);
+}
+
+@media screen and (max-width: 768px) {
+    .app-sidenav {
+        padding: 20px 0 0 0;
+        width: 50%;
+        background-color: var(--base);
+    }
+}
+
+.sidenav-button {
+    width: 100%;
+    text-align: left;
+    color: var(--complement);
+    font-size: small;
+    background-color: var(--base);
+}
+
+.mat-icon {
+    vertical-align: middle;
+    padding-right: 5px;
 }
