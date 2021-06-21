@@ -1,0 +1,9 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+    <ng-container *ngFor="let workItem of workItems">
+        <mat-grid-tile class="work-item-container"  style="background-image: url({{workItem.thumbnail}});">
+            <a mat-flat-button class="work-item-button" href="{{workItem.git}}" target="_blank">
+                {{workItem.desc}}
+            </a>
+        </mat-grid-tile>
+    </ng-container>
+</mat-grid-list>

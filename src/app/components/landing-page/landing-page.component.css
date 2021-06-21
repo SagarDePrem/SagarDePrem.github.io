@@ -1,0 +1,20 @@
+.landing-container{
+    /* display: flex;
+    flex-grow: grow; */
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#carousel{
+    width: 100%;
+    height: 100%;
+}
+.carousel-cell{
+    width: 100%;
+    height: 100%;
+}
+.carousel-image{
+    width: 100%;
+    height: 100%;
+}
