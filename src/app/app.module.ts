@@ -11,6 +11,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { HttpClientModule } from '@angular/common/http';
 import { VerticalTimelineModule } from 'angular-vertical-timeline';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,7 @@ import { VerticalTimelineModule } from 'angular-vertical-timeline';
     IvyCarouselModule,
     HttpClientModule,
     VerticalTimelineModule,
-    
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

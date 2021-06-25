@@ -1,54 +1,64 @@
-.work-item-container {
-    align-items: center;
-    background-position-x: center;
-    background-position-y: center;
-    object-fit: cover;
-}
-
-.work-item-button {
-    background-color: black;
-    color: white;
-    width: 25%;
-    font-size: 20px;
-    font-weight: bold;
-    font-variant-caps: all-petite-caps;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 .app-container {
     width: 100%;
     height: 100%;
 }
 
-.app-content {
-    height: 50%;
-    align-items: center;
-    justify-content: center;
-}
-
 .app-sidenav {
-    padding: 20px 0 0 0;
-    width: 15%;
-    background-color: var(--base);
-}
-
-@media screen and (max-width: 768px) {
-    .app-sidenav {
-        padding: 20px 0 0 0;
-        width: 50%;
-        background-color: var(--base);
-    }
+    padding: 5% 0 0 0;
+    width: 18%;
+    color: primary;
+    position: fixed;
 }
 
 .sidenav-button {
     width: 100%;
     text-align: left;
-    color: var(--complement);
     font-size: small;
-    background-color: var(--base);
 }
 
-.mat-icon {
-    vertical-align: middle;
-    padding-right: 5px;
+.nav-icon {
+    padding: 0 10px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .app-sidenav {
+        width: 15%;
+    }
+    .sidenav-button {
+        height: 25%;
+        padding: 12.5% 0;
+        text-align: left;
+        font-size: xx-small;
+        transform: rotate(-90deg);
+    }
+    .nav-icon {
+        padding: 0 10px 0 0;
+        font-size: smaller;
+    }
+}
+
+.work-item-container {
+    align-items: center;
+    background-position-x: center;
+    background-position-y: center;
+    object-fit: cover;
+    background-color: secondary;
+}
+
+.work-item-button {
+    width: 25%;
+    font-size: medium;
+    border-radius: 0;
+    font-weight: bold;
+    font-variant-caps: all-petite-caps;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mat-drawer-container {
+    background-color: secondary;
+}
+
+.grid-container {
+    background-color: secondary;
+    height: 100%;
 }

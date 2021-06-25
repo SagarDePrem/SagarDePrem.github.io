@@ -1,45 +1,24 @@
-<mat-toolbar>
+<mat-toolbar color="primary">
     <!-- <button mat-icon-button mat-button (click)="drawer.toggle()"> -->
-    <button mat-icon-button mat-button>  
-    <mat-icon>person</mat-icon>
-  </button>
-    <span class="mobile-off">Hey there!</span>
+    <span class="mobile-off" color=accent>Hey there!</span>
+
     <span class="navbar-spacer"></span>
 
-    <button class="nav-button" routerLink="/home" mat-flat-button>
+    <button class="nav-button" routerLink="/home" mat-flat-button [color]="navColorHome" (mouseover)="navColorHome = 'secondary'" (mouseout)="navColorHome = 'primary'">
      <mat-icon class="nav-icon">home</mat-icon>
      Home
    </button>
-    <button class="nav-button" routerLink="/work" mat-flat-button>
+    <button class="nav-button" routerLink="/work" mat-flat-button [color]="navColorWork" (mouseover)="navColorWork = 'secondary'" (mouseout)="navColorWork = 'primary'">
      <mat-icon class="nav-icon">work</mat-icon>
-     Work
+     <span>Work</span>
    </button>
-    <button class="nav-button" routerLink="/contact" mat-flat-button>
+    <button class="nav-button" routerLink="/contact" mat-flat-button [color]="navColorConnect" (mouseover)="navColorConnect = 'secondary'" (mouseout)="navColorConnect = 'primary'">
      <mat-icon class="nav-icon">send</mat-icon>
      Connect
    </button>
 
 </mat-toolbar>
 <mat-drawer-container class="app-container" autosize>
-    <!-- <mat-drawer #drawer class="app-sidenav" mode="side" opened="false">
-
-        <mat-card class="avatar-card">
-            <mat-card-content>
-                <img class='avatar-image' mat-card-avatar src="{{avatar.avatar_image}}" alt="Avatar Picture">
-                <p class="avatar-name">
-                    Prem Sagar S
-                </p>
-            </mat-card-content>
-        </mat-card>
-
-        <mat-divider class="avatar-divider"></mat-divider>
-
-        <button class="sidenav-button" mat-flat-button>
-      <mat-icon class="nav-icon">person</mat-icon>
-      Example
-    </button>
-    </mat-drawer> -->
-
     <div class="app-content">
         <router-outlet></router-outlet>
     </div>

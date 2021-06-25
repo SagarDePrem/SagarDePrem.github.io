@@ -1,50 +1,23 @@
 <mat-drawer-container class="app-container" autosize>
     <mat-drawer #drawer class="app-sidenav" mode="side" opened>
-        <button class="sidenav-button" mat-flat-button>
-            <mat-icon class="nav-icon">insights</mat-icon>
-            Data Analysis
-        </button>
-        <button class="sidenav-button" mat-flat-button>
-            <mat-icon class="nav-icon">scatter_plot</mat-icon>
-            DataViz
-        </button>
-        <button class="sidenav-button" mat-flat-button>
-            <mat-icon class="nav-icon">smart_toy</mat-icon>
-            Machine Learning
-        </button>
-        <button class="sidenav-button" mat-flat-button>
-            <mat-icon class="nav-icon">layers</mat-icon>
-            Deep Learning
-        </button>
-        <button class="sidenav-button" mat-flat-button>
-            <mat-icon class="nav-icon">language</mat-icon>
-            Natural Language Processing
-        </button>
-        <button class="sidenav-button" mat-flat-button>
-            <mat-icon class="nav-icon">image</mat-icon>
-            Computer Vision
-        </button>
-        <button class="sidenav-button" mat-flat-button>
-            <mat-icon class="nav-icon">cloud</mat-icon>
-            Cloud
-        </button>
-        <button class="sidenav-button" mat-flat-button>
-            <mat-icon class="nav-icon">notifications</mat-icon>
-            Prognostics
-        </button>
-        <button class="sidenav-button" mat-flat-button>
-            <mat-icon class="nav-icon">list</mat-icon>
-            Recommendation Systems
-        </button>
+        <div *ngFor="let node of workNodes">
+            <button class="sidenav-button" mat-flat-button (click)="setActiveTab(node.name)">
+                <mat-icon class="nav-icon">{{node.icon}}</mat-icon>
+                {{node.name}}
+            </button>
+        </div>
     </mat-drawer>
 
-    <mat-grid-list cols="2" rowHeight="2:1">
-        <ng-container *ngFor="let workItem of workItems">
-            <mat-grid-tile class="work-item-container" style="background-image: url({{workItem.thumbnail}});">
-                <a mat-flat-button class="work-item-button" href="{{workItem.git}}" target="_blank">
-                    {{workItem.desc}}
-                </a>
-            </mat-grid-tile>
-        </ng-container>
-    </mat-grid-list>
+    <div class="grid-container">
+        <mat-grid-list cols="2" rowHeight="2:1">
+            <ng-container *ngFor="let workItem of activeWorkItems">
+                <mat-grid-tile class="work-item-container" style="background-image: url({{workItem.thumbnail}});">
+                    <a mat-flat-button class="work-item-button" href="{{workItem.git}}" target="_blank">
+                        {{workItem.desc}}
+                    </a>
+                </mat-grid-tile>
+            </ng-container>
+        </mat-grid-list>
+    </div>
+
 </mat-drawer-container>

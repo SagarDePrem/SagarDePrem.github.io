@@ -1,0 +1,37 @@
+[{
+        "name": "Data Analysis",
+        "icon": "insights"
+    },
+    {
+        "name": "DataViz",
+        "icon": "scatter_plot"
+    },
+    {
+        "name": "Machine Learning",
+        "icon": "smart_toy"
+    },
+    {
+        "name": "Deep Learning",
+        "icon": "layers"
+    },
+    {
+        "name": "Natural Language Processing",
+        "icon": "language"
+    },
+    {
+        "name": "Computer Vision",
+        "icon": "image"
+    },
+    {
+        "name": "Cloud",
+        "icon": "cloud"
+    },
+    {
+        "name": "Prognostics",
+        "icon": "notifications"
+    },
+    {
+        "name": "Recommendation Systems",
+        "icon": "list"
+    }
+]
