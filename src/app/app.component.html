@@ -1,25 +1,24 @@
 <mat-toolbar color="primary">
-    <!-- <button mat-icon-button mat-button (click)="drawer.toggle()"> -->
-    <span class="mobile-off" color=accent>Hey there!</span>
+  <span class="toolbar-avatar" color="accent">PS</span>
 
-    <span class="navbar-spacer"></span>
+  <span class="navbar-spacer"></span>
 
-    <button class="nav-button" routerLink="/home" mat-flat-button [color]="navColorHome" (mouseover)="navColorHome = 'secondary'" (mouseout)="navColorHome = 'primary'">
-     <mat-icon class="nav-icon">home</mat-icon>
-     Home
-   </button>
-    <button class="nav-button" routerLink="/work" mat-flat-button [color]="navColorWork" (mouseover)="navColorWork = 'secondary'" (mouseout)="navColorWork = 'primary'">
-     <mat-icon class="nav-icon">work</mat-icon>
-     <span>Work</span>
-   </button>
-    <button class="nav-button" routerLink="/contact" mat-flat-button [color]="navColorConnect" (mouseover)="navColorConnect = 'secondary'" (mouseout)="navColorConnect = 'primary'">
-     <mat-icon class="nav-icon">send</mat-icon>
-     Connect
-   </button>
-
+  <button class="nav-button" fxLayout="row" fxLayoutAlign="center" routerLink="/home" mat-flat-button [color]="navColorHome" [disableRipple]="true">
+    <mat-icon class="nav-icon" fxFlexAlign="center">home</mat-icon>
+    Home
+  </button>
+  <button class="nav-button" fxLayout="row" fxLayoutAlign="center" routerLink="/work" mat-flat-button [color]="navColorWork" [disableRipple]="true">
+    <mat-icon class="nav-icon" fxFlexAlign="center">work</mat-icon>
+    <span>Work</span>
+  </button>
+  <button class="nav-button" fxLayout="row" fxLayoutAlign="center" routerLink="/home" fragment="connect" href="#connect" mat-flat-button [color]="navColorWork" mat-flat-button [disableRipple]="true">
+      <mat-icon class="nav-icon">send</mat-icon>
+      Connect
+  </button>
 </mat-toolbar>
+
 <mat-drawer-container class="app-container" autosize>
-    <div class="app-content">
-        <router-outlet></router-outlet>
-    </div>
+  <div class="app-content">
+    <router-outlet></router-outlet>
+  </div>
 </mat-drawer-container>

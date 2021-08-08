@@ -6,13 +6,19 @@
 }
 
 .section-light {
-    background: #f4f4f4;
-    color: #666;
+    background: secondary;
+    background: linear-gradient(primary, accent);
+    color: primary;
+    padding: 2% 10%;
+    text-align: justify;
 }
 
 .section-dark {
-    background: #282e34;
-    color: #ddd;
+    background: primary;
+    color: secondary;
+    padding: 2% 10%;
+    text-align: justify;
+    background: linear-gradient(primary, accent);
 }
 
 .ptext {
@@ -20,45 +26,80 @@
     top: 45%;
     width: 100%;
     text-align: center;
-    color: primary;
-    font-size: larger;
+    font-size: 300px;
     letter-spacing: 8px;
     text-transform: uppercase;
 }
 
 .ptext .border {
-    background: #000;
-    color: white;
-    padding: 20px
+    color: accent;
+    background: accent;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: xx-large;
+    opacity: 1;
 }
 
 .ptext .border.trans {
-    background: #000;
+    background: secondary;
+    color: primary
 }
 
-.pimg1,
-.pimg2,
-.pimg3 {
+.heroimg{
     position: relative;
-    opacity: 0.7;
+    opacity: 1;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    perspective: 1px;
+    perspective: 50px;
+}
+.workimg,
+.acadimg, 
+.certimg,
+.contactimg  {
+    position: relative;
+    opacity: 0.6;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    perspective: 25px;
 }
 
-.pimg1 {
-    background-image: url(https://drive.google.com/uc?export=view&id=1Lv9O1NvpT3FJGjM6WtiaVY_u7AW92KFL);
+.heroimg {
+    /* background-image: url(https://drive.google.com/uc?export=view&id=1MrKmMhEWG2OYKOdGZwlyZXa4f7R1vFZ0); */
+    /* background-image: url(https://drive.google.com/uc?export=view&id=1MpK92Cd-Q7B4uqIFDJJXovAlKQRLvhKj);  */
+    background-image: url(https://drive.google.com/uc?export=view&id=1MvYTfaf9S4R7hJAN5pS3D-C20vWqhSQZ);   
+    /* background-image: url(https://drive.google.com/uc?export=view&id=1MuNMSKEh06Z-5H9PM8MNd7bIRy_hiWlU);  */
+    /* background-image: url(https://drive.google.com/uc?export=view&id=1MuxFQiyR84eeLyp4K00QyLrEPpyVEnuG);  */
+    
     min-height: 700px;
 }
 
-.pimg2 {
-    background-image: url(https://drive.google.com/uc?export=view&id=1T9G62vKcGBzloZB6gLPGuclby6xG_m6G);
+.workimg {
+    background-image: url(https://drive.google.com/uc?export=view&id=1UYxkFKXgWhQufJXCn7jsEWdiMut9VIY_);
     min-height: 700px;
 }
 
-.pimg3 {
-    background-image: url(https://drive.google.com/uc?export=view&id=1BTnipkskcRBJW416UylL5SfmPelfLapY);
+.acadimg {
+    background-image: url(https://drive.google.com/uc?export=view&id=1cudQxYSRbSbk1rkvyeAgmvCPq8GFY89I);
     min-height: 700px;
 }
+
+.certimg {
+    background-image: url(https://drive.google.com/uc?export=view&id=1IQ6TaZrxgQ2sLdXDmUvGOEFNTOinOqfE);
+    min-height: 700px;
+}
+
+.contactimg{
+    background-image: url(https://drive.google.com/uc?export=view&id=1E7ZmF-lOTK0KMf_5HzpJQvD_ab_6U8-z);
+    min-height: 700px;
+}
+
+/* .contact-container{
+    height: 50px;
+    color: white;
+    padding: 10% 30%;
+    text-align: left;
+} */

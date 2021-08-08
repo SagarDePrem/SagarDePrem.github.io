@@ -16,37 +16,52 @@ mat-toolbar {
 }
 
 .nav-button {
-    /* width: 6%; */
+    width: 6%;
     text-align: center;
     color: accent;
     font-size: small;
-    padding: 0 1%;
-    background-color: accent;
+    padding: 0 1% 0;
     vertical-align: middle;
     height: 100%;
     border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 }
 
-.nav-button:hover {
-    height: 110%;
-    font-size: small;
-    border-radius: 0 0 15px 15px;
-    text-align: center;
+.nav-button:hover{
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
+    text-underline-offset: 6px;
 }
+
+.nav-button:active{
+    text-decoration: underline;
+    text-decoration-color: warn;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
+    text-underline-offset: 6px;
+}
+
+
 
 .sidenav-button {
     width: 100%;
     text-align: left;
     color: accent;
-    font-size: small;
-    padding: 50px;
+    font-size: medium;
+    /* padding: 0 50px; */
     background-color: primary;
+    align-items: center;
 }
 
 .nav-icon {
-    font-size: x-large;
-    padding-right: 8px;
-    padding-bottom: 3px;
+    font-size: large;
+    /* padding: 0 10px 0 0; */
+    vertical-align: bottom;
+    padding-right: 2px;
 }
 
 .avatar-card {
@@ -98,4 +113,11 @@ mat-card-avatar {
     .mobile-off {
         visibility: hidden;
     }
+}
+
+.toolbar-avatar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-variant: initial;
 }

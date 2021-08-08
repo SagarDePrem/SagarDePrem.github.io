@@ -1,4 +1,4 @@
-<mat-drawer-container class="app-container" autosize>
+<mat-drawer-container autosize>
     <mat-drawer #drawer class="app-sidenav" mode="side" opened>
         <div *ngFor="let node of workNodes">
             <button class="sidenav-button" mat-flat-button (click)="setActiveTab(node.name)">
@@ -6,9 +6,11 @@
                 {{node.name}}
             </button>
         </div>
+
+
     </mat-drawer>
 
-    <div class="grid-container">
+    <mat-drawer-content class="grid-container">
         <mat-grid-list cols="2" rowHeight="2:1">
             <ng-container *ngFor="let workItem of activeWorkItems">
                 <mat-grid-tile class="work-item-container" style="background-image: url({{workItem.thumbnail}});">
@@ -18,6 +20,6 @@
                 </mat-grid-tile>
             </ng-container>
         </mat-grid-list>
-    </div>
+    </mat-drawer-content>
 
 </mat-drawer-container>

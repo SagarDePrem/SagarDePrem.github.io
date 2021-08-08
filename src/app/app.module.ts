@@ -12,6 +12,8 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { HttpClientModule } from '@angular/common/http';
 import { VerticalTimelineModule } from 'angular-vertical-timeline';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     IvyCarouselModule,
     HttpClientModule,
     VerticalTimelineModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterModule.forRoot([
+      {path: 'home', component: LandingPageComponent, pathMatch: 'full'}],
+      {
+      anchorScrolling: 'enabled',
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

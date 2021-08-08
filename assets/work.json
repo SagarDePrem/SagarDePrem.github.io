@@ -10,14 +10,14 @@
         "thumbnail": "https://drive.google.com/uc?export=view&id=1Lv9O1NvpT3FJGjM6WtiaVY_u7AW92KFL",
         "desc": "Test Desc",
         "git": "https://github.com/sagardeprem-data-science/fashion-mnist",
-        "tags": ["Deep Learning", "Computer Vision"]
+        "tags": ["Deep Learning", "Computer Vision", "Data Analysis"]
     },
     {
         "id": 3,
         "thumbnail": "https://drive.google.com/uc?export=view&id=1Lv9O1NvpT3FJGjM6WtiaVY_u7AW92KFL",
         "desc": "Test Desc",
         "git": "https://github.com/sagardeprem-data-science/fashion-mnist",
-        "tags": ["Computer Vision", "Cloud"]
+        "tags": ["Computer Vision", "Cloud", "Data Analysis"]
     },
     {
         "id": 4,
