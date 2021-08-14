@@ -2,7 +2,7 @@ mat-toolbar {
     position: fixed;
     top: 0;
     z-index: 1000;
-    height: 7%;
+    height: 7.5%;
     min-height: 50px;
     padding-right: 0;
 }
@@ -19,7 +19,7 @@ mat-toolbar {
     width: 6%;
     text-align: center;
     color: accent;
-    font-size: small;
+    font-size: medium;
     padding: 0 1% 0;
     vertical-align: middle;
     height: 100%;
