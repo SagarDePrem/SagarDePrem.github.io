@@ -33,5 +33,9 @@
     {
         "name": "Recommendation Systems",
         "icon": "list"
+    },
+    {
+        "name": "Fluid Mechanics",
+        "icon": "water"
     }
 ]

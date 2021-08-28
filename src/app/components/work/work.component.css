@@ -43,7 +43,11 @@
 }
 
 .work-item-content{
-    display: flex; margin-left: 20px; padding-top: 10px;vertical-align: middle; text-align: justify;
+    display: flex;
+    margin-left: 20px; 
+    padding-top: 10px;
+    vertical-align: middle; 
+    text-align: justify;
 }
 
 .grid-container {
@@ -55,7 +59,9 @@
 .work-img{
     justify-self: center;
     width: 120px;
-    height: 120px;
+    height: 120
+    
+    px;
     padding-left: 50px;
     padding-right: 20px;
 }
@@ -64,5 +70,5 @@ mat-tab-group{
     height: 100%;
 }
 mat-grid-list{
-    height: 80%;
+    height: 100%;
 }

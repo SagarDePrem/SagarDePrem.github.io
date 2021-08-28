@@ -4,7 +4,7 @@
         "title": "Project Title",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit deleniti, temporibus fugiat voluptatibus optio non magnam laboriosam, esse ad cum quod quis aliquam alias illum eius recusandae ab dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit deleniti, temporibus fugiat voluptatibus optio non magnam laboriosam, esse ad cum quod quis aliquam alias illum eius recusandae ab dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit deleniti, temporibus fugiat voluptatibus optio non magnam laboriosam, esse ad cum quod quis aliquam alias illum eius recusandae ab dolore.",
         "git": "https://github.com/sagardeprem-data-science/fashion-mnist",
-        "tags": ["Data Analysis", "Machine Learning"]
+        "tags": ["Data Analysis", "Machine Learning", "DataViz"]
     },
     {
         "id": 2,
@@ -76,6 +76,22 @@
         "title": "Project Title",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit deleniti, temporibus fugiat voluptatibus optio non magnam laboriosam, esse ad cum quod quis aliquam alias illum eius recusandae ab dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit deleniti, temporibus fugiat voluptatibus optio non magnam laboriosam, esse ad cum quod quis aliquam alias illum eius recusandae ab dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit deleniti, temporibus fugiat voluptatibus optio non magnam laboriosam, esse ad cum quod quis aliquam alias illum eius recusandae ab dolore.",
         "git": "https://github.com/sagardeprem-data-science/fashion-mnist",
-        "tags": ["Computer Vision", "Cloud"]
+        "tags": ["Computer Vision", "Cloud", "Fluid Mechanics"]
+    },
+    {
+        "id": 11,
+        "thumbnail": "https://drive.google.com/uc?export=view&id=1Lv9O1NvpT3FJGjM6WtiaVY_u7AW92KFL",
+        "title": "Project Title",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit deleniti, temporibus fugiat voluptatibus optio non magnam laboriosam, esse ad cum quod quis aliquam alias illum eius recusandae ab dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit deleniti, temporibus fugiat voluptatibus optio non magnam laboriosam, esse ad cum quod quis aliquam alias illum eius recusandae ab dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit deleniti, temporibus fugiat voluptatibus optio non magnam laboriosam, esse ad cum quod quis aliquam alias illum eius recusandae ab dolore.",
+        "git": "https://github.com/sagardeprem-data-science/fashion-mnist",
+        "tags": ["Prognostics", "Cloud"]
+    },
+    {
+        "id": 12,
+        "thumbnail": "https://drive.google.com/uc?export=view&id=1Lv9O1NvpT3FJGjM6WtiaVY_u7AW92KFL",
+        "title": "Project Title",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit deleniti, temporibus fugiat voluptatibus optio non magnam laboriosam, esse ad cum quod quis aliquam alias illum eius recusandae ab dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit deleniti, temporibus fugiat voluptatibus optio non magnam laboriosam, esse ad cum quod quis aliquam alias illum eius recusandae ab dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id velit deleniti, temporibus fugiat voluptatibus optio non magnam laboriosam, esse ad cum quod quis aliquam alias illum eius recusandae ab dolore.",
+        "git": "https://github.com/sagardeprem-data-science/fashion-mnist",
+        "tags": ["Recommendation Systems", "Cloud"]
     }
 ]

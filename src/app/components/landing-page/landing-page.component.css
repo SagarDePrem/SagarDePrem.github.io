@@ -7,22 +7,18 @@
     background-color: #272727;
 }
 
-.avatar-container {
-    padding-top: 6%;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-    margin: 0;
-}
-
 .avatar-img{
     border-radius: 50%;
-    height: 160px;
+    height: 120px;
+}
+
+.avatar-container{
+    padding-top: 40px;
 }
 
 .welcome{
     padding-top: 3%;
+    padding-left: 20px;
     height: 40% ;
 }
 
@@ -41,6 +37,14 @@
     font-size: large;
     height: 25%;
     text-align: justify;
+}
+
+.intro-box{
+    padding-top: 6%;
+    display: flexbox;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
 }
 
 .info{
@@ -120,7 +124,7 @@
         visibility: hidden;
     }
 
-    img{
+    .avatar-img{
         border-radius: 50%;
         height: 80px;
     }
@@ -152,11 +156,6 @@
     .contact{
         display: flex;
         justify-content: center;
-        /* padding-top: 3%;
-        padding-bottom: 14.5%;
-        padding-left: 15%;
-        padding-right: 15%;
-        width: 100%; */
     }
     .contact-desc{
         display: none;

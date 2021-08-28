@@ -1,15 +1,14 @@
 <button mat-flat-button routerLink="/" class="home"><mat-icon>home</mat-icon></button>
 <mat-tab-group>
-    <mat-tab  *ngFor="let node of workNodes" [label]="node.name" (click)="setActiveTab(node.name)">
+    <mat-tab  *ngFor="let node of workNodes" [label]="node.name">
         <ng-template mat-tab-label>
             <mat-icon class="tab-icon">{{node.icon}}</mat-icon>
             {{node.name}}
         </ng-template>
         
-        <mat-grid-list cols="2" rowHeight="3:1">
-            <ng-container *ngFor="let workItem of activeWorkItems">
+        <mat-grid-list cols="2" rowHeight="2.5:1">
+            <ng-container *ngFor="let workItem of workProjects[node.name]">
                 <mat-grid-tile class="work-item-container" >
-
                     <mat-card class="work-item-card">
                         <mat-card-header>
                           <mat-card-title>{{workItem.title}}</mat-card-title>
@@ -18,18 +17,15 @@
                           <p>
                               {{workItem.desc}}
                           </p>
+                          
                             <img mat-card-image class="work-img" src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-
                         </mat-card-content>
-                        <mat-card-actions sty>
-                            <a mat-flat-button class="work-item-button" href="{{workItem.git}}" target="_blank">
+                        <mat-card-actions>
+                            <a mat-flat-button class="work-item-button"  href="{{workItem.git}}" target="_blank">
                                 <i class="fa fa-github"></i>
                             </a>
                         </mat-card-actions>
                       </mat-card>
-                      
-                   
-                    
                 </mat-grid-tile>
             </ng-container>
         </mat-grid-list>
