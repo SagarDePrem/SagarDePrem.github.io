@@ -1,22 +1,3 @@
-<mat-toolbar color="primary">
-  <span class="toolbar-avatar" color="accent">PS</span>
-
-  <span class="navbar-spacer"></span>
-
-  <button class="nav-button" fxLayout="row" fxLayoutAlign="center" routerLink="/home" fragment="landing" href="#landing" mat-flat-button [color]="navColorHome" [disableRipple]="true">
-    <!-- <mat-icon class="nav-icon" fxFlexAlign="center">home</mat-icon> -->
-    Home
-  </button>
-  <button class="nav-button" fxLayout="row" fxLayoutAlign="center" routerLink="/work" mat-flat-button [color]="navColorWork" [disableRipple]="true">
-    <!-- <mat-icon class="nav-icon" fxFlexAlign="center">work</mat-icon> -->
-    <span>Work</span>
-  </button>
-  <button class="nav-button" fxLayout="row" fxLayoutAlign="center" routerLink="/home" fragment="connect" href="#connect" mat-flat-button [color]="navColorWork" mat-flat-button [disableRipple]="true">
-      <!-- <mat-icon class="nav-icon">send</mat-icon> -->
-      Connect
-  </button>
-</mat-toolbar>
-
 <mat-drawer-container class="app-container" autosize>
   <div class="app-content">
     <router-outlet></router-outlet>

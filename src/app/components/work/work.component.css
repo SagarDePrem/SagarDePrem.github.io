@@ -1,35 +1,17 @@
-.app-sidenav {
-    padding: 4.5% 0 0 0;
-    width: 18%;
-    color: primary;
-    position: fixed;
-}
-
-.sidenav-button {
-    width: 100%;
-    text-align: left;
-    font-size: small;
-}
-
-.nav-icon {
+.tab-icon {
     padding: 0 10px 0 0;
 }
 
 @media screen and (max-width: 768px) {
-    .app-sidenav {
-        width: 15%;
-    }
-    .sidenav-button {
-        height: 25%;
-        padding: 12.5% 0;
-        text-align: left;
-        font-size: xx-small;
-        transform: rotate(-90deg);
-    }
-    .nav-icon {
-        padding: 0 10px 0 0;
-        font-size: smaller;
-    }
+}
+
+.home{
+    width: 80px;
+    height: 50px;
+    background-color: #14A76C;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .work-item-container {
@@ -37,20 +19,50 @@
     background-position-x: center;
     background-position-y: center;
     object-fit: cover;
-    background-color: secondary;
+    background-color: #14A76C;
+
+
 }
 
 .work-item-button {
     width: 25%;
-    font-size: medium;
+    font-size: xx-large;
     border-radius: 0;
     font-weight: bold;
     font-variant-caps: all-petite-caps;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.work-item-card{
+    margin-right: 30px;
+    margin-left: 30px;
+    height: 75%;
+    vertical-align: middle;
+}
+
+.work-item-content{
+    display: flex; margin-left: 20px; padding-top: 10px;vertical-align: middle; text-align: justify;
 }
 
 .grid-container {
     background-color: secondary;
     padding-top: 3.5%;
     /* height: 100%; */
+}
+
+.work-img{
+    justify-self: center;
+    width: 120px;
+    height: 120px;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+mat-tab-group{
+    height: 100%;
+}
+mat-grid-list{
+    height: 80%;
 }

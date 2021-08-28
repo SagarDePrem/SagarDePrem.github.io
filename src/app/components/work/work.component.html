@@ -1,23 +1,40 @@
-<mat-drawer-container autosize>
-    <mat-drawer #drawer class="app-sidenav" mode="side" opened>
-        <div *ngFor="let node of workNodes">
-            <button class="sidenav-button" mat-flat-button (click)="setActiveTab(node.name)">
-                <mat-icon class="nav-icon">{{node.icon}}</mat-icon>
-                {{node.name}}
-            </button>
-        </div>
-    </mat-drawer>
-
-    <mat-drawer-content class="grid-container">
-        <mat-grid-list cols="2" rowHeight="2:1">
+<button mat-flat-button routerLink="/" class="home"><mat-icon>home</mat-icon></button>
+<mat-tab-group>
+    <mat-tab  *ngFor="let node of workNodes" [label]="node.name" (click)="setActiveTab(node.name)">
+        <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">{{node.icon}}</mat-icon>
+            {{node.name}}
+        </ng-template>
+        
+        <mat-grid-list cols="2" rowHeight="3:1">
             <ng-container *ngFor="let workItem of activeWorkItems">
-                <mat-grid-tile class="work-item-container" style="background-image: url({{workItem.thumbnail}});">
-                    <a mat-flat-button class="work-item-button" href="{{workItem.git}}" target="_blank">
-                        {{workItem.desc}}
-                    </a>
+                <mat-grid-tile class="work-item-container" >
+
+                    <mat-card class="work-item-card">
+                        <mat-card-header>
+                          <mat-card-title>{{workItem.title}}</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content class="work-item-content" >
+                          <p>
+                              {{workItem.desc}}
+                          </p>
+                            <img mat-card-image class="work-img" src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+
+                        </mat-card-content>
+                        <mat-card-actions sty>
+                            <a mat-flat-button class="work-item-button" href="{{workItem.git}}" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </mat-card-actions>
+                      </mat-card>
+                      
+                   
+                    
                 </mat-grid-tile>
             </ng-container>
         </mat-grid-list>
-    </mat-drawer-content>
+    </mat-tab>
+</mat-tab-group>
 
-</mat-drawer-container>
+
+ 

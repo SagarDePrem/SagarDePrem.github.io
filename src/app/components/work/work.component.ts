@@ -38,6 +38,6 @@ export class WorkComponent implements OnInit {
         this.activeWorkItems.push(workItems[i])
       }
     }
-    console.log(this.activeWorkItems)
+    // console.log(this.activeWorkItems)
   }
 }

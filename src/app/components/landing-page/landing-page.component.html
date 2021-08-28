@@ -1,94 +1,74 @@
 <div class="landing-container" id="landing">
-    <div class="heroimg">
-        <div class="ptext">
-            <span class="border">
-              Hey there!  
-            </span>
-        </div>
-    </div>
-    <section class="section section-light">
-        <h2> Hey there!</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex rerum consequatur facere. Temporibus accusamus commodi beatae, cupiditate praesentium odio illum adipisci eligendi, officia, dignissimos esse sint laboriosam molestias tempore. Aliquid, rerum
-            cupiditate! Quaerat quae at qui neque architecto magni eum quasi cupiditate, saepe eius officiis, aspernatur eligendi natus incidunt dolore mollitia necessitatibus exercitationem eaque! Nihil, veniam aut perferendis culpa, non laboriosam officia
-            quasi itaque at deserunt fugit, nam quisquam labore nostrum! Esse fugiat officiis fugit cumque laudantium autem nam voluptatem qui atque harum in error consequatur, quod quia laborum porro quos! At illum dicta corrupti, iste architecto labore?
-            Inventore, placeat veritatis! Sapiente facilis dolor incidunt, exercitationem pariatur, repellat porro aliquid fugiat veniam placeat officia? Similique, laboriosam ipsum perspiciatis hic voluptatum nulla corporis aliquid quod vitae? Sit quisquam
-            nam aliquid? Recusandae sed earum corrupti unde quibusdam quas numquam! Quod a sunt, architecto repudiandae accusamus quaerat maiores perspiciatis, obcaecati officiis veniam hic rerum ipsam iusto vero, aliquam mollitia sit nobis exercitationem
-            consequuntur laborum assumenda reiciendis dolor nemo animi! Consequuntur est reprehenderit repudiandae qui quaerat dolor itaque deserunt distinctio velit at quasi ratione odio eum natus ipsum tempora molestias, ducimus sapiente nisi ut architecto
-            eius illo. Recusandae corporis aliquid praesentium sapiente id aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi eaque sed quod explicabo consequatur, similique eos quaerat dicta quibusdam, maxime veritatis eius ab harum
-            possimus magni nihil cum minus eum?
-        </p>
-    </section>
-    <div class="workimg">
-        <div class="ptext">
-            <!-- <span class="border trans">
-                
-            </span> -->
-        </div>
-    </div>
-    <section class="section section-dark">
-        <h2> Work. </h2>
-        <p>
-            I'm currently a Data Scientist at Boeing India Private Limited.
-        </p>
 
-        <button  mat-flat-button routerLink="/work" color='accent'>
-            Checkout my portfolio!
-        </button>
-            
-            
-    </section>
-    <div class="acadimg">
-        <div class="ptext">
-            <!-- <span class="border trans">
-                
-            </span> -->
-        </div>
-    </div>
-    <section class="section section-dark">
-        <h2> Academics </h2>
-            <ul>
-                <li>Dual Degree IITM</li>
-            </ul>
+    <section class="avatar-container">
+        <img mat-card-image class="avatar-img" [src]="avatar_image.avatar_image">
+    </section>  
+
+    <section class="welcome">
+        <p class="intro">Hello,</p>
+        <p class="intro">I'm <span class="name"> Prem Sagar</span>.</p>
     </section>
 
-    <div class="pimg3">
-        <div class="certimg">
-            <span class="border trans">
-                Image 3 text
-            </span>
-        </div>
-    </div>
-    <section class="section section-dark">
-        <h2> Certifications</h2>
+    <section class="intro-message">
         <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi eaque sed quod explicabo consequatur, similique eos quaerat dicta quibusdam, maxime veritatis eius ab harum possimus magni nihil cum minus eum?
+            Lorem ipsum dolor, sit amet cosnsectetur adipisicing elit. Assumenda, rem veniam. Consequuntur, deserunt odio labore in cumque maiores perspiciatis tempore sunt velit omnis corporis tempora vitae modi! Porro, dolores facere?
         </p>
+    </section> 
+
+
+    <section class="info">
+        <button mat-flat-button color="primary" class="info-button" routerLink  ="/work" routerLinkActive="active">Portfolio</button>
+        <button mat-flat-button color="primary" class="info-button">Resume</button>
     </section>
 
-    <div class="contactimg">
-        <div class="ptext">
-            <!-- <span class="border">
-                Parallax Website
-            </span> -->
-        </div>
-    </div>
-    <section class="section section-dark" id="connect">
-        <h2> Let's talk.</h2>
-        <div class="contact-container">
-            <p class="contact-info">
-                <mat-icon class="contact-icon">dialpad</mat-icon>
-                +91 95384 29431
-            </p>
-            <p class="contact-info">
-                <mat-icon class="contact-icon">mail</mat-icon> 
-                sagardeprem@gmail.com
-            </p>
-            <p class="contact-info">
-                <mat-icon class="contact-icon">twitter</mat-icon> 
-                @sagardeprem
-            </p>
-            
-        </div>
+    <section class="contact">
+        <a class="contact-button" href="http://www.twitter.com/sagardeprem" target="_blank">
+            <i class="fa fa-twitter">
+                <span class="contact-desc">sagardeprem </span>
+            </i>
+        </a>
+
+        <a class="contact-button" href="http://www.twitter.com/sagardeprem" target="_blank">
+            <i class="fa fa-linkedin">
+                <span class="contact-desc">sagardeprem </span>
+            </i>
+        </a>
+        <a class="contact-button" href="http://www.twitter.com/sagardeprem" target="_blank">
+            <i class="fa fa-xing">
+                <span class="contact-desc">sagardeprem </span>
+            </i>
+        </a>
+        
+        <a class="contact-button">
+            <i class="fa fa-mobile">
+                <span class="contact-desc">+919538429431</span>
+            </i>
+        </a>
+
+        <a class="contact-button">
+            <i class="fa fa-envelope">
+                <span class="contact-desc">sagardeprem@gmail.com</span>
+            </i>
+        </a>
+        
     </section>
 </div>
+
+<!-- <div id="skills" class="skills">
+    <mat-tab-group>
+        <mat-tab *ngFor="let skillgrp of skills" [label]="skillgrp.name" >
+            <ng-template mat-tab-label>
+                <mat-icon class="tab-icon">{{skillgrp.icon}}</mat-icon>
+                <span style="padding-left: 10px;">{{skillgrp.name}}</span>
+            </ng-template>
+            
+            <div class="tech-skill-container">
+                <div *ngFor="let tech of skillgrp.tech">
+                    <span class="tech">{{tech}}</span>
+                </div>
+            </div>
+        </mat-tab>
+
+    </mat-tab-group>
+</div> -->
+

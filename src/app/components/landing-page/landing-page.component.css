@@ -3,103 +3,164 @@
     height: 100%;
     padding: 0;
     margin: 0;
-}
-
-.section-light {
-    background: secondary;
-    background: linear-gradient(primary, accent);
-    color: primary;
-    padding: 2% 10%;
-    text-align: justify;
-}
-
-.section-dark {
-    background: primary;
-    color: secondary;
-    padding: 2% 10%;
-    text-align: justify;
-    background: linear-gradient(primary, accent);
-}
-
-.ptext {
-    position: absolute;
-    top: 45%;
-    width: 100%;
     text-align: center;
-    font-size: 300px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
+    background-color: #272727;
 }
 
-.ptext .border {
-    color: accent;
-    background: accent;
-    padding: 20px;
+.avatar-container {
+    padding-top: 6%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    margin: 0;
+}
+
+.avatar-img{
+    border-radius: 50%;
+    height: 160px;
+}
+
+.welcome{
+    padding-top: 3%;
+    height: 40% ;
+}
+
+.intro{
+    font-size: xxx-large;
     font-weight: bolder;
-    font-size: xx-large;
-    opacity: 1;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-.ptext .border.trans {
-    background: secondary;
-    color: primary
+.intro-message{
+    padding-top: 3%;
+    padding-bottom: 1%;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: large;
+    height: 25%;
+    text-align: justify;
 }
 
-.heroimg{
-    position: relative;
-    opacity: 1;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    perspective: 50px;
-}
-.workimg,
-.acadimg, 
-.certimg,
-.contactimg  {
-    position: relative;
-    opacity: 0.6;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    perspective: 25px;
+.info{
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 10%;
 }
 
-.heroimg {
-    /* background-image: url(https://drive.google.com/uc?export=view&id=1MrKmMhEWG2OYKOdGZwlyZXa4f7R1vFZ0); */
-    /* background-image: url(https://drive.google.com/uc?export=view&id=1MpK92Cd-Q7B4uqIFDJJXovAlKQRLvhKj);  */
-    background-image: url(https://drive.google.com/uc?export=view&id=1MvYTfaf9S4R7hJAN5pS3D-C20vWqhSQZ);   
-    /* background-image: url(https://drive.google.com/uc?export=view&id=1MuNMSKEh06Z-5H9PM8MNd7bIRy_hiWlU);  */
-    /* background-image: url(https://drive.google.com/uc?export=view&id=1MuxFQiyR84eeLyp4K00QyLrEPpyVEnuG);  */
-    
-    min-height: 700px;
+.info-button{
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    color: #272727;
 }
 
-.workimg {
-    background-image: url(https://drive.google.com/uc?export=view&id=1UYxkFKXgWhQufJXCn7jsEWdiMut9VIY_);
-    min-height: 700px;
+.name{
+    color: #86C232;
 }
 
-.acadimg {
-    background-image: url(https://drive.google.com/uc?export=view&id=1cudQxYSRbSbk1rkvyeAgmvCPq8GFY89I);
-    min-height: 700px;
+.contact{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 14.5%;
+    height: 25%;
+    width: 100%;
 }
 
-.certimg {
-    background-image: url(https://drive.google.com/uc?export=view&id=1IQ6TaZrxgQ2sLdXDmUvGOEFNTOinOqfE);
-    min-height: 700px;
+.contact-info{
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
-.contactimg{
-    background-image: url(https://drive.google.com/uc?export=view&id=1E7ZmF-lOTK0KMf_5HzpJQvD_ab_6U8-z);
-    min-height: 700px;
-}
-
-/* .contact-container{
-    height: 50px;
+.contact-button{
     color: white;
-    padding: 10% 30%;
-    text-align: left;
-} */
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: medium;
+}
+
+.contact-desc{
+    padding-left: 8px;
+    padding-right: 2%;
+    width: 30%;
+}
+
+.skills{
+    background-color: #14A76C;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    text-align: justify;
+    height: 450px
+}
+
+.tech-skill-container{
+    display: flexbox;
+    justify-content: center;
+    padding-top: 30px;
+    height: 100px;
+}
+
+.tech{
+    background-color: #14A76C;
+    width: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: medium; 
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-off {
+        visibility: hidden;
+    }
+
+    img{
+        border-radius: 50%;
+        height: 80px;
+    }
+
+    .avatar-container {
+        padding-top: 8%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .intro{
+        font-size: x-large;
+        font-weight: bolder;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .intro-message{
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: medium;
+    }
+
+
+    .contact{
+        display: flex;
+        justify-content: center;
+        /* padding-top: 3%;
+        padding-bottom: 14.5%;
+        padding-left: 15%;
+        padding-right: 15%;
+        width: 100%; */
+    }
+    .contact-desc{
+        display: none;
+        justify-content: center;
+        padding-left: 5px;
+    }
+}
