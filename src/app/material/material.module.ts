@@ -9,6 +9,8 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card'; 
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatTreeModule} from '@angular/material/tree'; 
+import {MatTabsModule} from '@angular/material/tabs'; 
+
 const MaterialComponents = [
   MatToolbarModule,
   MatButtonModule,
@@ -21,6 +23,7 @@ const MaterialComponents = [
   MatDividerModule,
   MatStepperModule,
   MatTreeModule,
+  MatTabsModule
 ];
 @NgModule({
   imports: [MaterialComponents

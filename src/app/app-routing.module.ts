@@ -4,7 +4,6 @@ import { ContactComponent } from './components/contact/contact.component';
 import { EducationComponent } from './components/education/education.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { WorkComponent } from './components/work/work.component';
-
 const routes: Routes = [
   {
     path: 'home', component:LandingPageComponent, pathMatch: 'full'

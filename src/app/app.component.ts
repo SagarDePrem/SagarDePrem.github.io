@@ -10,4 +10,7 @@ export class AppComponent {
   title = 'PS';
   showFiller = false;
   avatar: any = avatar;
+  navColorHome = 'primary';
+  navColorWork = 'primary';
+  navColorConnect = 'primary';
 }

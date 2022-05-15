@@ -1,20 +1,165 @@
-.landing-container{
-    /* display: flex;
-    flex-grow: grow; */
+.landing-container {
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
+    text-align: center;
+    background-color: #272727;
 }
-#carousel{
-    width: 100%;
-    height: 100%;
+
+.avatar-img{
+    border-radius: 50%;
+    height: 120px;
 }
-.carousel-cell{
-    width: 100%;
-    height: 100%;
+
+.avatar-container{
+    padding-top: 40px;
 }
-.carousel-image{
+
+.welcome{
+    padding-top: 3%;
+    padding-left: 20px;
+    height: 40% ;
+}
+
+.intro{
+    font-size: xxx-large;
+    font-weight: bolder;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.intro-message{
+    padding-top: 3%;
+    padding-bottom: 1%;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: large;
+    height: 25%;
+    text-align: justify;
+}
+
+.intro-box{
+    padding-top: 6%;
+    display: flexbox;
+    justify-content: center;
     width: 100%;
-    height: 100%;
+    margin: 0;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 10%;
+}
+
+.info-button{
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    color: #272727;
+}
+
+.name{
+    color: #86C232;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 14.5%;
+    height: 25%;
+    width: 100%;
+}
+
+.contact-info{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.contact-button{
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: medium;
+}
+
+.contact-desc{
+    padding-left: 8px;
+    padding-right: 2%;
+    width: 30%;
+}
+
+.skills{
+    background-color: #14A76C;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    text-align: justify;
+    height: 450px
+}
+
+.tech-skill-container{
+    display: flexbox;
+    justify-content: center;
+    padding-top: 30px;
+    height: 100px;
+}
+
+.tech{
+    background-color: #14A76C;
+    width: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: medium; 
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-off {
+        visibility: hidden;
+    }
+
+    .avatar-img{
+        border-radius: 50%;
+        height: 80px;
+    }
+
+    .avatar-container {
+        padding-top: 8%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .intro{
+        font-size: x-large;
+        font-weight: bolder;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .intro-message{
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: medium;
+    }
+
+
+    .contact{
+        display: flex;
+        justify-content: center;
+    }
+    .contact-desc{
+        display: none;
+        justify-content: center;
+        padding-left: 5px;
+    }
 }
